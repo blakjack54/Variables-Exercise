@@ -1,26 +1,26 @@
 ﻿using System;
 
-namespace VariableInterpolation
+namespace Variables
 {
     class Program
     {
         static void Main(string[] args)
         {
-            // Step 1: Declare and initialize variables
-            string myString = "Hello, World!";
-            int myInt = 42;
-            char myChar = 'A';
-            bool myBool = true;
-            double myDouble = 3.14;
-            decimal myDecimal = 19.99m;
+            string firstName = "Blake";
+            int age = 28;
+            char firstInitial = 'B';
+            bool isLearningCSharp = true;
+            double heightInFeet = 5.11;
+            decimal bankBalance = 1250.75m;
 
-            // Step 2: Interpolate variables in a Console.WriteLine
-            Console.WriteLine($"String value: {myString}");
-            Console.WriteLine($"Int value: {myInt}");
-            Console.WriteLine($"Char value: {myChar}");
-            Console.WriteLine($"Bool value: {myBool}");
-            Console.WriteLine($"Double value: {myDouble}");
-            Console.WriteLine($"Decimal value: {myDecimal}");
+            Console.WriteLine(
+                $"My name is {firstName}. " +
+                $"I am {age} years old. " +
+                $"My first initial is {firstInitial}. " +
+                $"It is {isLearningCSharp} that I am learning C#. " +
+                $"My height is approximately {heightInFeet} feet, " +
+                $"and my bank balance is ${bankBalance}."
+            );
         }
     }
 }
